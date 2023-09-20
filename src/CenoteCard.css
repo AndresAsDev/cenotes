@@ -1,0 +1,41 @@
+/* src/components/CenoteCard.css */
+.cenote-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .cenote-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .cenote-card .card-content {
+    margin-top: 10px;
+  }
+  
+  .cenote-card .card-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .cenote-card .card-content p {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .cenote-card .card-content a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  .cenote-card .card-content a:hover {
+    color: #0056b3;
+  }
+  

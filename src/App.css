@@ -1,0 +1,15 @@
+/* src/App.css */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+/* src/App.css */
+/* src/App.css */
+.cenote-cards-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px; /* Ajusta según sea necesario */
+}
