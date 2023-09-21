@@ -1,0 +1,17 @@
+/* img{
+    width: 100%;
+} */
+.container{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    max-width: 500px;
+    display: flex;
+    font-size: medium;
+   /*  border: red solid 2px; */
+}
+
+.info-container{
+    justify-content: center;
+    /* border: blue solid 2px; */
+    
+}
