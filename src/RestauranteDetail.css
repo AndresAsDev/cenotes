@@ -14,15 +14,17 @@
     align-items: center; /* Centra verticalmente los elementos en el contenedor */
   }
   
-  .map-container {
-    flex: 1;
-    /* Hace que el contenedor del mapa ocupe todo el espacio disponible en la fila */
-    /* Puedes agregar más estilos según sea necesario */
-  }
-  
   .info-container {
     flex: 1;
     /* Hace que el contenedor de información ocupe todo el espacio disponible en la fila */
     /* Puedes agregar más estilos según sea necesario */
+    margin-right: 20px; /* Agrega margen a la derecha para separar la información del mapa */
+  }
+  
+  .map-container {
+    flex: 1;
+    /* Hace que el contenedor del mapa ocupe todo el espacio disponible en la fila */
+    /* Puedes agregar más estilos según sea necesario */
+    margin-left: 20px; /* Agrega margen a la izquierda para separar el mapa de la información */
   }
   

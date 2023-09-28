@@ -1,13 +1,15 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import './RestauranteDetail.css';
 
 const restauranteInfo = {
   '00': {
     title: 'Restaurante Santa Cruz',
     imageUrl: 'https://media-cdn.tripadvisor.com/media/photo-s/16/c4/ea/9b/restaurante-santa-cruz.jpg',
-    price: '$$',
+    price: 'Según el platillo',
     description: 'Deliciosa comida típica yucateca',
-    location: 'Ubicación del restaurante 1',
+    location: 'C. 19, 97580 Homún, Yuc',
+    mapa:"https://www.google.com/maps/d/u/0/embed?mid=13TayxmsEmID-9B95Q8j9pySGdXzXJTU&ehbc=2E312F&noprof=1"
   },
   '01': {
     title: '',
@@ -28,14 +30,22 @@ const RestauranteDetail = () => {
   }
 
   return (
-    <div>
-      <h2>Detalles del restaurante: {restaurante.title}</h2>
-      <img src={restaurante.imageUrl} alt={restaurante.title} />
-      <p>Precio: {restaurante.price}</p>
-      <p>Descripción: {restaurante.description}</p>
-      <p>Ubicación: {restaurante.location}</p>
+    <div className='container'>
+      <div className='info-map-container'>
+        <div className='info-container'>
+          <h2>Detalles del restaurante: {restaurante.title}</h2>
+          <img src={restaurante.imageUrl} alt={restaurante.title} />
+          <p>Precio: {restaurante.price}</p>
+          <p>Descripción: {restaurante.description}</p>
+          <p>Ubicación: {restaurante.location}</p>
+        </div>
+        <div className='map-container'>
+          <iframe src={restaurante.mapa} width="320" height="700"></iframe>
+        </div>
+      </div>
     </div>
   );
+  
 };
 
 export default RestauranteDetail;

@@ -1,18 +1,34 @@
-.container{
+.container {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     justify-content: center;
-    max-width: 500px;
+    max-width: 800px; /* Ajusta el ancho máximo según sea necesario */
     display: flex;
     font-size: medium;
-   /*  border: red solid 2px; */
-}
-
-.info-container{
-    justify-content: center;
-    /* border: blue solid 2px; */
-    
-}
-
-img{
-    width: 500px;
-}
+    /* Ajusta otros estilos según sea necesario */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+  }
+  
+  .info-map-container {
+    display: flex;
+    /* Utiliza flexbox para colocar los elementos en una fila */
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+  }
+  
+  .info-container {
+    flex: 1;
+    /* Hace que el contenedor de información ocupe todo el espacio disponible en la fila */
+    /* Puedes agregar más estilos según sea necesario */
+    margin-right: 20px; /* Agrega margen a la derecha para separar la información del mapa */
+  }
+  
+  .cabina-image {
+    max-width: 500px; /* Ajusta el ancho máximo de la imagen según sea necesario */
+  }
+  
+  .map-container {
+    flex: 1;
+    /* Hace que el contenedor del mapa ocupe todo el espacio disponible en la fila */
+    /* Puedes agregar más estilos según sea necesario */
+    margin-left: 20px; /* Agrega margen a la izquierda para separar el mapa de la información */
+  }
+  
